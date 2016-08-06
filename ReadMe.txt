@@ -26,3 +26,4 @@ The application now runs on a single dyno. As you scale your app, you can change
 7. ProcFile
 Create a ProcFile in the root folder to tell explicitly what command should be executed to start your app.
 
+Note : https://devcenter.heroku.com/articles/git#tracking-your-app-in-git
