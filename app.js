@@ -6,6 +6,6 @@ app.use('/',function(req,res){
 	res.sendFile(__dirname + "/ReadMe.txt");
 });
 
-app.listen(3000,function(res,err){
+app.listen(process.env.PORT || 3000,function(res,err){
 	console.log('Started on port 3000');
 });
