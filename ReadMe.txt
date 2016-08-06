@@ -27,3 +27,19 @@ The application now runs on a single dyno. As you scale your app, you can change
 Create a ProcFile in the root folder to tell explicitly what command should be executed to start your app.
 
 Note : https://devcenter.heroku.com/articles/git#tracking-your-app-in-git
+
+
+**Linux commands**
+
+1. Download and install heroku toolbelt
+i. sudo wget -qO- https://toolbelt.heroku.com/install.sh | sh
+restart the system and add the path to .profile using 
+ii. $ echo '"PATH=/usr/local/bin/heroku:$PATH"' >> ~./profile
+iii. heroku
+iv. heroku login
+v. heroku create
+vi. git add --all
+vii. git commit -m "comment"
+vii. git push heroku master
+viii. heroku ps:scale web=1
+ix. heroku open 
